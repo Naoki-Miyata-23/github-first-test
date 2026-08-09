@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Hello World</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #4adede, #f7d060);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+  }
+
+  h1 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 6vw;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #7b2ff7, #ff0080);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: textShine 3s linear infinite;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes textShine {
+    to { background-position: 300% center; }
+  }
+</style>
+</head>
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>

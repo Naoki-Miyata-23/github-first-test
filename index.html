@@ -8,8 +8,10 @@
     margin: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
     background: linear-gradient(135deg, #ff6ec4, #7873f5, #4adede, #f7d060);
     background-size: 400% 400%;
     animation: gradientMove 8s ease infinite;
@@ -37,9 +39,45 @@
   @keyframes textShine {
     to { background-position: 300% center; }
   }
+
+  button {
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 999px;
+    background: white;
+    color: #7b2ff7;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    transition: transform 0.15s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  #message {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-height: 2rem;
+  }
+
+  a {
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
 </style>
 </head>
 <body>
   <h1>Hello World</h1>
+  <button onclick="document.getElementById('message').textContent = 'ボタンが押されました！';">
+    クリックしてみて
+  </button>
+  <p id="message"></p>
+  <a href="about.html">このプロジェクトについて &rarr;</a>
 </body>
 </html>

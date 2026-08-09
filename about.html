@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(135deg, #4adede, #7873f5, #ff6ec4, #f7d060);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+
+  p {
+    color: white;
+    font-size: 1.1rem;
+    max-width: 40rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  a {
+    color: white;
+    font-weight: 700;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+</head>
+<body>
+  <h1>About this project</h1>
+  <p>
+    このページは、Claude Codeを使ったGitHub連携の練習として作成されました。
+    ブランチ作成からPull Request、マージまでの一連の流れを実際に体験するためのサンプルです。
+  </p>
+  <a href="index.html">&larr; Hello Worldに戻る</a>
+</body>
+</html>
